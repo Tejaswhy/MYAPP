@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "443412901327",
+    "project_id": "safego-104fb",
+    "storage_bucket": "safego-104fb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443412901327:android:87cc6c84929f80accf76ba",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2AQHa17N6V5nStRgz_2da_8tQ-s51xqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

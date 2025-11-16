@@ -1,0 +1,28 @@
+<resources>
+    <string name="welcome">WELCOME</string>
+    <string name="safego">SAFEGO</string>
+    <string name="govtt">GOVERNMENT OF INDIA</string>
+    <string name="reg">Register</string>
+    <string name="login_info">Please login with your information</string>
+    <string name="aadhaar_hint">Aadhaar Number</string>
+    <string name="password_hint">Password</string>
+    <string name="register">Login</string>
+    <string name="govt">SAFE GO</string>
+    <string name="s1">Script Your Adventure</string>
+    <string name="s2">Discover The World of a Thousand Hidden Memories!</string>
+    <string name="s3">Where To</string>
+    <string name="show">Show Map</string>
+    <string name="heri">Heritage</string>
+    <string name="fest">Festivals</string>
+    <string name="wild">Wildlife</string>
+    <string name="ohh">GRANDEUR</string>
+    <string name="art">ART FORM</string>
+    <string name="Load">Loading....</string>
+    <string name="c1">TRANSPORT</string>
+    <string name="c2">WEATHER</string>
+    <string name="c3">TRANSLATION</string>
+    <string name="c4">AI ASSISTANT</string>
+    <string name="app_name">SAFEGO</string>
+    <string name="my_api_key">AIzaSyA7TBWOl6QPcKHCcHqgSYpaTwbRXDW4aXM</string>
+    <string name="gemini_api_key">AIzaSyDuvxb8gLEKL9EfrPl-0eCUwr4b6mOT7Lw</string>
+</resources>

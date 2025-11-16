@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8"
+    android:padding="16dp"
+    tools:context=".HeritageInfoActivity">
+
+    <TextView
+        android:id="@+id/heritageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Load"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:padding="8dp"
+        android:lineSpacingExtra="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"/>
+
+</ScrollView>

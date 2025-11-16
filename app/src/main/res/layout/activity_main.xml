@@ -1,0 +1,502 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/my_sroll"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Header Card -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="28dp"
+            app:cardBackgroundColor="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/safe" />
+
+                <TextView
+                    android:id="@+id/govt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/safego"
+                    android:layout_marginStart="120dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/govtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/govtt"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/govtLogo2"
+                    android:layout_marginLeft="333dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <!-- Search Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/searchbar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s1"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="23dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/sos"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="150dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sos" />
+
+            <TextView
+                android:id="@+id/searchbar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s2"
+                android:layout_marginTop="63dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:hint="@string/s3"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                app:boxStrokeWidth="1dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeWidthFocused="2dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/searchbar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:minHeight="28dp"
+                    android:autofillHints="username"
+                    android:importantForAutofill="yes"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/showMapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show"
+                android:layout_marginTop="170dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Google Map -->
+
+    <!-- Horizontal Scroll Cards -->
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Heritage Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/info1"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28dp"
+                app:cardBackgroundColor="@color/black">
+
+                <ImageView
+                    android:id="@+id/heri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/heri" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Other Cards -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/info2"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28dp"
+                app:cardBackgroundColor="@color/black">
+
+                <ImageView
+                    android:id="@+id/fest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fest" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/info3"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28dp"
+                app:cardBackgroundColor="@color/black">
+
+                <ImageView
+                    android:id="@+id/grand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/grandeur" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/info41"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28dp"
+                app:cardBackgroundColor="@color/black">
+
+                <ImageView
+                    android:id="@+id/art"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/art" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/info5"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28dp"
+                app:cardBackgroundColor="@color/black">
+
+                <ImageView
+                    android:id="@+id/wild"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/wildd" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:gravity="center"
+
+            android:padding="8dp">
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/transport"
+
+                android:layout_width="150dp"
+
+                android:layout_height="150dp"
+
+                android:layout_margin="8dp"
+
+                app:cardCornerRadius="28dp">
+
+                <ImageView
+
+                    android:id="@+id/traimage"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:scaleType="centerCrop"
+
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/transport"/>
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/c1"
+
+                    android:layout_marginLeft="55dp"
+
+                    android:layout_marginTop="130dp"
+                    android:textColor="@color/black"
+
+                    android:textStyle="bold"
+
+                    android:textSize="10sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/weather"
+
+                android:layout_width="150dp"
+
+                android:layout_height="150dp"
+
+                android:layout_margin="8dp"
+
+                app:cardCornerRadius="28dp">
+
+                <ImageView
+
+                    android:id="@+id/weaimage"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:scaleType="centerCrop"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/weather"/>
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/c2"
+
+                    android:layout_marginLeft="55dp"
+                    android:textColor="@color/black"
+
+
+                    android:layout_marginTop="130dp"
+
+                    android:textStyle="bold"
+
+                    android:textSize="10sp"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:gravity="center"
+
+            android:padding="8dp">
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/translate"
+
+                android:layout_width="150dp"
+
+                android:layout_height="150dp"
+
+                android:layout_margin="8dp"
+
+                app:cardCornerRadius="28dp">
+
+                <ImageView
+
+                    android:id="@+id/trainmage"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:scaleType="centerCrop"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/translate"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/c3"
+
+                    android:layout_marginLeft="45dp"
+
+                    android:layout_marginTop="130dp"
+                    android:textColor="@color/black"
+
+
+                    android:textStyle="bold"
+
+                    android:textSize="10sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/hospital"
+
+                android:layout_width="150dp"
+
+                android:layout_height="150dp"
+
+                android:layout_margin="8dp"
+
+                app:cardCornerRadius="28dp">
+
+                <ImageView
+
+                    android:id="@+id/hosimage"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:scaleType="centerCrop"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/ai"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/c4"
+
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/black"
+
+
+                    android:textStyle="bold"
+
+                    android:layout_marginTop="130dp"
+
+                    android:textSize="10sp"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
